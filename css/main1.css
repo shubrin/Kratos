@@ -1,0 +1,62 @@
+/* 모바일 버전 미디어 쿼리 */
+@media screen and (max-width:480px){
+    header {
+        height: 50px;
+    }
+    header .logo a p{
+        font-size: 100%;
+    }
+    header nav {
+        position: absolute;
+        right: 0; top:0;
+        width: 100%;
+        height: 100vh;
+        z-index: 100;
+        background-color: #222;
+    }
+    /* 주메뉴 */
+    header nav > ul {
+        flex-flow: column nowrap;
+        margin-top: 3rem;
+    }
+    header nav > ul > li > a {
+        display: block;
+        font-size: 1.2rem;
+        text-align: center;
+        padding-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+    header nav > ul > li > a:after{
+        display: none;
+    }
+
+    /* pc버전 메뉴이므로 모바일에서는 안보임 */
+    header .top-menu {
+        display: none;
+    }
+    /* 모바일 버전 메뉴 보임 */
+    header .mobile-top-menu{
+        display: block;
+    }
+    header .mobile-top-menu ul {
+        display: flex;
+    }
+    header .mobile-top-menu ul li {
+        width: 1.4rem;
+        margin-left: 0.8rem;
+    }
+
+    .s1 {
+        height: 100vh;
+    }
+    .s1 .main .swiper {
+        width: 100%;
+    }
+    .s2 .line-up .line-up-inner {
+        margin-right: 100px;
+    }
+    .s2 .line-up .line-up-inner .line-up-cat .line-up-cat-title h2 {
+        font-size: 20px;
+        
+    }
+}
